@@ -5,7 +5,9 @@ const Header = () => {
   const menuItems = (
     <React.Fragment>
       <li>
-        <Link to="/">Home</Link>
+        <Link className="font-bold" to="/">
+          Home
+        </Link>
       </li>
     </React.Fragment>
   );
@@ -38,9 +40,11 @@ const Header = () => {
               {menuItems}
             </ul>
           </div>
-          <a className="btn btn-ghost font-bold normal-case text-2xl">
-            Softic Blog
-          </a>
+          <Link to="/">
+            <a className="text-teal-800 btn btn-ghost font-bold normal-case text-2xl">
+              Softic Blog
+            </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">{menuItems}</ul>
